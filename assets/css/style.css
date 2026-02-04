@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --color-plan: #6500ff;
 }
@@ -39,6 +40,46 @@
     border-radius: 2em;
     padding: 1em;
     box-shadow: 1px 1px 1px 1px grey;
+    display: flex;
+    flex-direction: column;
+    p {
+        display: inline;
+    }
+
+    &.inverted-color {
+        background-color: var(--color-plan);
+        color: white;
+    }
+}
+.discount {
+    background-color: lightgray;
+}
+.choose-button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    &:not(.inverted-color) {
+        background-color: var(--color-plan);
+        color: white; 
+    }
+    &.inverted-color {
+        background-color: white;
+        color: var(--color-plan);
+    }
+    
+}
+.centered {
+    margin: 0.5rem auto; 
+}
+ul {
+    list-style: none;
+}
+.grey {
+    color:grey
+}
+.price {
+    display: inline;
+    font-size: 2em;
 }
 .debug>* {
     border: 1px solid purple;
