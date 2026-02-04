@@ -71,15 +71,25 @@
 .centered {
     margin: 0.5rem auto; 
 }
-ul {
-    list-style: none;
-}
-.grey {
-    color:grey
-}
 .price {
     display: inline;
     font-size: 2em;
+}
+ul {
+    list-style: none;
+}
+header {
+    margin: 2rem 1rem 4rem 1rem;
+
+}
+.end-align {
+    text-align: end;
+}
+.bi {
+    color: black;
+}
+.grey {
+    color:grey
 }
 .debug>* {
     border: 1px solid purple;
