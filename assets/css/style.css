@@ -39,7 +39,7 @@
     flex-shrink: 0;
     border-radius: 2em;
     padding: 1em;
-    box-shadow: 1px 1px 1px 1px grey;
+    box-shadow: 2px 2px 2px 2px lightgray;
     display: flex;
     flex-direction: column;
     p {
@@ -50,9 +50,24 @@
         background-color: var(--color-plan);
         color: white;
     }
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content:space-around
+    }
+    li {
+        min-width:200px;
+        margin: 1rem;
+
+    }
 }
 .discount {
     background-color: lightgray;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 .choose-button {
     padding: 1rem;
@@ -74,10 +89,9 @@
 .price {
     display: inline;
     font-size: 2em;
+    font-weight: bolder;
 }
-ul {
-    list-style: none;
-}
+
 header {
     margin: 2rem 1rem 4rem 1rem;
 
